@@ -24,7 +24,7 @@ public class PlayerManager : MonoBehaviour {
     }
 	
     void FixedUpdate() {
-
+        
         // get normalized camera direction. Ignor Y transformation
         Vector3 camDir = Camera.main.transform.forward;
         camDir.y = 0;
@@ -45,6 +45,9 @@ public class PlayerManager : MonoBehaviour {
 
         // apply new velocity
         rb.velocity = newVel;
+
+
+
 
         /***** Old movement management based on position transform rather than velocity. *****
           
